@@ -1604,8 +1604,15 @@ blockquote .small {
 }
 .isotope-filter ul li {
     display: inline-block;
-    position: relative;
+    position: relative;    
 }
+
+@media screen and (max-width: 700px) {
+    .isotope-filter ul li {
+        margin-bottom: 20px;
+    }
+}
+
 .isotope-filter ul li a {
     display: inline-block;
     color: #2e2e2e;
@@ -3960,4 +3967,31 @@ video::-webkit-media-controls {
 	.section-title h2:after {
 	    display: none
 	}
+}
+/*-----------------------------------------------------------------------------------*/
+/*	35. Language-bar
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    .language-bar {
+        position: absolute;
+        right: 20rem;
+        top: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .language-bar {
+        position: absolute;
+        right: 10vw;
+        bottom: 12px;
+    }
+}
+
+.language-bar a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.language-bar a:hover {
+    text-decoration: underline;
 }
